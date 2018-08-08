@@ -23,7 +23,7 @@ public class NiñoController : MonoBehaviour {
         Vector3 movement = new Vector3(x, 0, y);
 
         
-        rb.velocity = movement * 4f;
+        rb.velocity = movement * 15f;
 
         if((x!=0) && (y!=0))
         {
@@ -32,7 +32,7 @@ public class NiñoController : MonoBehaviour {
        
         if (x != 0 || y != 0)
         {
-            anim.Play("backwards-walk");
+            anim.Play("walk2");
 
         }
         else
