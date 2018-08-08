@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/SampleScene.unity
+    guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/Colores.unity
+    guid: 8059ca29c7125a548a87f6a643c189b6
+  - enabled: 1
+    path: "Assets/Scenes/N\xFAmeros.unity"
+    guid: 3b55cb73b8aded743b5a31fd7b54ca26
+  - enabled: 1
+    path: Assets/Scenes/Vocales.unity
+    guid: 8336f9036f35f7040a3f1f1f42eaf0e9
+  - enabled: 1
+    path: Assets/Scenes/Direcciones.unity
+    guid: ed8d6b857b8ea2b4b85cc1247d73cf47
+  m_configObjects: {}
