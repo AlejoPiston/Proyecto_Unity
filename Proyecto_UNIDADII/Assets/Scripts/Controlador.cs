@@ -11,6 +11,8 @@ public class Controlador : MonoBehaviour, IVirtualButtonEventHandler
     public GameObject btn;
     public GameObject btn2;
     public Animation ani;
+    public AudioClip puntosClip;
+    private AudioSource audioPuntos;
 
     // Use this for initialization
     void Start () {
@@ -19,6 +21,8 @@ public class Controlador : MonoBehaviour, IVirtualButtonEventHandler
         btn2 = GameObject.Find("Menu");
         btn2.GetComponent<VirtualButtonBehaviour>().RegisterEventHandler(this);
         ani.GetComponent<Animation>();
+        audioPuntos = GetComponent<AudioSource>();
+
 
     }
     public void OnButtonPressed(VirtualButtonBehaviour b)
@@ -32,6 +36,8 @@ public class Controlador : MonoBehaviour, IVirtualButtonEventHandler
                 break;
             case "Derecha":
                 ani.Play("wave");
+                audioPuntos.clip = puntosClip;
+                audioPuntos.Play();
                 break;
                
         }
